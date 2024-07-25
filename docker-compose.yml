@@ -1,10 +1,9 @@
-version: '3.8'
+version: "3.8"
 
 services:
   client:
     build:
       context: ./client
-    dockerfile: Dockerfile
     ports:
       - "3000:3000"
     volumes:
@@ -17,7 +16,6 @@ services:
   server:
     build:
       context: ./server
-    dockerfile: Dockerfile
     ports:
       - "5000:5000"
     volumes:
@@ -25,4 +23,3 @@ services:
       - /app/node_modules
     environment:
       - NODE_ENV=development
-
