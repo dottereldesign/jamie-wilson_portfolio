@@ -13,6 +13,9 @@ RUN npm install
 # Copy the rest of the project files to the container
 COPY . .
 
+# Set environment variable to use legacy OpenSSL provider
+ENV NODE_OPTIONS=--openssl-legacy-provider
+
 # Build the app
 RUN npm run build
 
@@ -24,3 +27,4 @@ EXPOSE 3000
 
 # Define the command to run the app
 CMD ["serve", "-s", "build"]
+
