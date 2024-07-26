@@ -1,16 +1,15 @@
-// client/src/index.jsx
-import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import App from "./components/App";
-import Home from "./components/Home";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import App from './components/App';
 
 ReactDOM.render(
   <Router>
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route path="/app" component={App} />
-    </Switch>
+    <Routes>
+      <Route path="/" element={<App />} />
+      {/* Add other routes here */}
+    </Routes>
   </Router>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
+

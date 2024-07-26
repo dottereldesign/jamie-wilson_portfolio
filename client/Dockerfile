@@ -10,6 +10,9 @@ COPY package*.json ./
 # Install project dependencies
 RUN npm install --prefer-offline
 
+# Set the environment variable to avoid OpenSSL issues
+ENV NODE_OPTIONS=--openssl-legacy-provider
+
 # Copy the rest of the project files to the container
 COPY . .
 
@@ -18,3 +21,4 @@ EXPOSE 3000
 
 # Define the command to run the app
 CMD ["npm", "start"]
+
