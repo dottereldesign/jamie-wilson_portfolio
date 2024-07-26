@@ -8,17 +8,19 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install project dependencies
-RUN npm install --prefer-offline
-
-# Set the environment variable to avoid OpenSSL issues
-ENV NODE_OPTIONS=--openssl-legacy-provider
+RUN npm install
 
 # Copy the rest of the project files to the container
 COPY . .
+
+# Build the app
+RUN npm run build
+
+# Install serve to serve the build directory
+RUN npm install -g serve
 
 # Expose the port the app runs on
 EXPOSE 3000
 
 # Define the command to run the app
-CMD ["npm", "start"]
-
+CMD ["serve", "-s", "build"]
