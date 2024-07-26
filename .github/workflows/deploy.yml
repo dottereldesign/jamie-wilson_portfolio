@@ -35,7 +35,12 @@ jobs:
         run: |
           docker buildx build --push --tag ${{ secrets.DOCKER_USERNAME }}/myapp:latest --cache-from=type=registry,ref=${{ secrets.DOCKER_USERNAME }}/myapp:cache --cache-to=type=registry,ref=${{ secrets.DOCKER_USERNAME }}/myapp:cache,mode=max .
 
+      - name: Add SSH key
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
       - name: Deploy to DigitalOcean
         if: github.ref == 'refs/heads/master'
         run: |
-          ssh root@${{ secrets.DO_SERVER_IP }} 'docker pull ${{ secrets.DOCKER_USERNAME }}/myapp:latest && docker-compose -f /path/to/docker-compose.yml up -d'
+          ssh -o StrictHostKeyChecking=no root@${{ secrets.DO_SERVER_IP }} 'docker pull ${{ secrets.DOCKER_USERNAME }}/myapp:latest && docker-compose -f /path/to/docker-compose.yml up -d'
