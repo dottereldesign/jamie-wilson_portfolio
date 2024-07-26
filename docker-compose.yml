@@ -30,7 +30,7 @@ services:
       - /etc/letsencrypt/live/www.jamiewilson.app/fullchain.pem:/etc/nginx/ssl/fullchain.pem:ro
       - /etc/letsencrypt/live/www.jamiewilson.app/privkey.pem:/etc/nginx/ssl/privkey.pem:ro
       - ./options-ssl-nginx.conf:/etc/nginx/ssl/options-ssl-nginx.conf:ro
-      - ./ssl-dhparams.pem:/etc/nginx/ssl/ssl-dhparams.pem:ro
+      - /etc/nginx/ssl/ssl-dhparams.pem:/etc/nginx/ssl/ssl-dhparams.pem:ro
     depends_on:
       - client
       - server
