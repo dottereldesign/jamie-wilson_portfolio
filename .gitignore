@@ -17,16 +17,6 @@ yarn-error.log*
 # Environment variables
 .env
 
-# Dependency directories
-client/package-lock.json
-server/package-lock.json
-
-# Docker
-docker-compose.override.yml
-
-# Nginx
-nginx/*.conf
-
 # System files
 .DS_Store
 Thumbs.db
