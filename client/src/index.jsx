@@ -1,11 +1,16 @@
 // client/src/index.jsx
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./components/App";
+import React, { Suspense, lazy } from "react";
+import { createRoot } from "react-dom/client";
 
-ReactDOM.render(
+const App = lazy(() => import("./components/App"));
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
+    <Suspense fallback={<div>Loading...</div>}>
+      <App />
+    </Suspense>
+  </React.StrictMode>
 );

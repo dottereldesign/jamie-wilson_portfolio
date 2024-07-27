@@ -1,29 +1,22 @@
 // client/src/components/ThemeSwitcher.jsx
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 import "./ThemeSwitcher.css";
 
-const ThemeSwitcher = () => {
-  const toggleTheme = () => {
-    const themeSwitcher = document.getElementById("theme-switcher-grid");
-    themeSwitcher.classList.toggle("night-theme");
-    document.body.style.backgroundColor = themeSwitcher.classList.contains(
-      "night-theme"
-    )
-      ? "var(--bg-color-dark)"
-      : "var(--bg-color-light)";
-  };
+const ThemeSwitcher = ({ onToggleTheme }) => {
+  const [isNightTheme, setIsNightTheme] = useState(false);
 
-  useEffect(() => {
-    const themeSwitcher = document.getElementById("theme-switcher-grid");
-    themeSwitcher.addEventListener("click", toggleTheme);
-    return () => themeSwitcher.removeEventListener("click", toggleTheme);
-  }, []);
+  const handleClick = () => {
+    setIsNightTheme((prevTheme) => !prevTheme);
+    onToggleTheme();
+  };
 
   return (
     <button
-      className="theme-switcher-grid"
+      className={`theme-switcher-grid ${isNightTheme ? "night-theme" : ""}`}
       id="theme-switcher-grid"
       aria-label="Switch theme"
+      onClick={handleClick}
     >
       <div className="sun" id="sun" aria-hidden="true"></div>
       <div className="moon-overlay" id="moon-overlay" aria-hidden="true"></div>
@@ -53,6 +46,10 @@ const ThemeSwitcher = () => {
       <div className="star" id="star4" aria-hidden="true"></div>
     </button>
   );
+};
+
+ThemeSwitcher.propTypes = {
+  onToggleTheme: PropTypes.func.isRequired,
 };
 
 export default ThemeSwitcher;
