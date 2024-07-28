@@ -1,3 +1,4 @@
+// client/src/components/Navigation.jsx
 import React from 'react'
 import ThemeSwitcher from './ThemeSwitcher'
 import PropTypes from 'prop-types'
