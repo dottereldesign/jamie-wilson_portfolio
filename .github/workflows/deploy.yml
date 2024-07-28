@@ -40,6 +40,18 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
+      - name: Run frontend tests
+        run: |
+          cd client
+          npm install
+          npm test
+
+      - name: Run backend tests
+        run: |
+          cd server
+          npm install
+          npm test
+
       - name: Deploy to DigitalOcean
         if: github.ref == 'refs/heads/master'
         run: |
