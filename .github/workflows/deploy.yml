@@ -43,4 +43,4 @@ jobs:
       - name: Deploy to DigitalOcean
         if: github.ref == 'refs/heads/master'
         run: |
-          ssh -o StrictHostKeyChecking=no root@${{ secrets.DO_SERVER_IP }} 'docker pull ${{ secrets.DOCKER_USERNAME }}/myapp:latest && docker-compose -f /path/to/docker-compose.yml up -d'
+          ssh -o StrictHostKeyChecking=no root@${{ secrets.DO_SERVER_IP }} 'docker pull ${{ secrets.DOCKER_USERNAME }}/myapp:latest && docker-compose -f /var/www/jamie-wilson_portfolio/docker-compose.yml up -d'
