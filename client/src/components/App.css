@@ -4,15 +4,26 @@
 @import '../base/reset.css';
 @import '../base/typography.css';
 
-.night-theme {
-  color: #f0f0e8;
-  background-color: #1c2135;
-}
-
 body {
-  background-color: var(--color-background-light);
+  background-color: var(--color-background);
+  color: var(--color-text);
 }
 
+nav {
+  padding: 8px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: var(
+    --color-nav-background
+  ); /* Apply nav background color based on theme */
+}
 main {
   padding: 16px;
+}
+
+.app-container {
+  width: min(100%, 1200px);
+  margin: 0 auto;
 }

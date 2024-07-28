@@ -1,19 +1,23 @@
 // client/src/components/ThemeSwitcher.jsx
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import './ThemeSwitcher.css'
 
-const ThemeSwitcher = ({ onToggleTheme }) => {
-  const [isNightTheme, setIsNightTheme] = useState(false)
+const ThemeSwitcher = ({ isNightTheme, onToggleTheme }) => {
+  const [theme, setTheme] = useState(isNightTheme)
+
+  useEffect(() => {
+    setTheme(isNightTheme)
+  }, [isNightTheme])
 
   const handleClick = () => {
-    setIsNightTheme((prevTheme) => !prevTheme)
+    setTheme((prevTheme) => !prevTheme)
     onToggleTheme()
   }
 
   return (
     <button
-      className={`theme-switcher-grid ${isNightTheme ? 'night-theme' : ''}`}
+      className={`theme-switcher-grid ${theme ? 'night-theme' : ''}`}
       id="theme-switcher-grid"
       aria-label="Switch theme"
       onClick={handleClick}
@@ -49,6 +53,7 @@ const ThemeSwitcher = ({ onToggleTheme }) => {
 }
 
 ThemeSwitcher.propTypes = {
+  isNightTheme: PropTypes.bool.isRequired,
   onToggleTheme: PropTypes.func.isRequired
 }
 

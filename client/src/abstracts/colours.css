@@ -1,18 +1,23 @@
+/* client/src/abstracts/colours.css */
 :root {
   --color-primary: #6200ea;
   --color-secondary: #03dac6;
   --color-background-light: #f0f0e8;
-  --color-background-dark: #121212;
+  --color-background-dark: #1c2135;
   --color-text-light: #000000;
   --color-text-dark: #f0f0e8;
+  --color-nav-background-light: #f0f0e8; /* Add this for nav light background */
+  --color-nav-background-dark: #333333; /* Add this for nav dark background */
 }
 
 [data-theme='dark'] {
   --color-background: var(--color-background-dark);
   --color-text: var(--color-text-dark);
+  --color-nav-background: var(--color-background-dark);
 }
 
 [data-theme='light'] {
   --color-background: var(--color-background-light);
   --color-text: var(--color-text-light);
+  --color-nav-background: var(--color-color-background-light);
 }
