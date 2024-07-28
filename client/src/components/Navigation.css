@@ -1,0 +1,9 @@
+/* client/src/components/Navigation.css */
+nav {
+  width: min(100%, 1200px);
+  padding: 8px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}

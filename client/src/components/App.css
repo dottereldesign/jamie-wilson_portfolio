@@ -1,0 +1,18 @@
+/* client/src/components/App.css */
+@import '../abstracts/colours.css';
+@import '../abstracts/fonts.css';
+@import '../base/reset.css';
+@import '../base/typography.css';
+
+.night-theme {
+  color: red;
+  background-color: blue;
+}
+
+body {
+  background-color: var(--color-background-light);
+}
+
+main {
+  padding: 16px;
+}

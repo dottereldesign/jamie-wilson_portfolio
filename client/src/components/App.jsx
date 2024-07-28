@@ -1,8 +1,7 @@
-// client/src/components/App.jsx
 import React, { useState } from 'react'
 import { Helmet } from 'react-helmet'
 import Home from './Home'
-import ThemeSwitcher from './ThemeSwitcher'
+import Navigation from './Navigation'
 import './App.css'
 
 const App = () => {
@@ -10,9 +9,10 @@ const App = () => {
 
   const toggleTheme = () => {
     setIsNightTheme(!isNightTheme)
-    document.body.style.backgroundColor = !isNightTheme
-      ? 'var(--bg-color-dark)'
-      : 'var(--bg-color-light)'
+    document.documentElement.setAttribute(
+      'data-theme',
+      !isNightTheme ? 'dark' : 'light'
+    )
   }
 
   return (
@@ -27,9 +27,7 @@ const App = () => {
         <noscript>{`<link rel="stylesheet" href="/path/to/styles.css" />`}</noscript>
       </Helmet>
       <header>
-        <nav>
-          <ThemeSwitcher onToggleTheme={toggleTheme} />
-        </nav>
+        <Navigation onToggleTheme={toggleTheme} />
       </header>
       <main className={isNightTheme ? 'night-theme' : ''}>
         <Home />
