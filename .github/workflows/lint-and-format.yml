@@ -13,5 +13,19 @@ jobs:
         with:
           node-version: "14"
       - run: npm install
-      - run: npm run lint
-      - run: npm run format
+
+      # Lint and format client
+      - name: Lint and format client
+        run: |
+          cd client
+          npm install
+          npm run lint
+          npm run format
+
+      # Lint and format server
+      - name: Lint and format server
+        run: |
+          cd server
+          npm install
+          npm run lint
+          npm run format
