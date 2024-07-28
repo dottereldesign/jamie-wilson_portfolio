@@ -1,19 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Helmet } from 'react-helmet'
-import Home from './Home'
-import Navigation from './Navigation'
+import Home from '../components/Home'
+import Navigation from '../components/Navigation'
+import useToggleTheme from '../hooks/useToggleTheme'
 import './App.css'
 
 const App = () => {
-  const [isNightTheme, setIsNightTheme] = useState(false)
-
-  const toggleTheme = () => {
-    setIsNightTheme(!isNightTheme)
-    document.documentElement.setAttribute(
-      'data-theme',
-      !isNightTheme ? 'dark' : 'light'
-    )
-  }
+  const [isNightTheme, toggleTheme] = useToggleTheme()
 
   return (
     <div>

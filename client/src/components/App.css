@@ -5,8 +5,8 @@
 @import '../base/typography.css';
 
 .night-theme {
-  color: red;
-  background-color: blue;
+  color: #f0f0e8;
+  background-color: #1c2135;
 }
 
 body {
