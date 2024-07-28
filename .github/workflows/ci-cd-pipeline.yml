@@ -40,6 +40,10 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
+      - name: Check SSH Connection and Docker Status
+        run: |
+          ssh -o StrictHostKeyChecking=no root@${{ secrets.DO_SERVER_IP }} 'docker ps'
+
       - name: Run frontend tests
         run: |
           cd client
@@ -61,3 +65,8 @@ jobs:
             docker-compose down &&
             docker-compose up -d
           '
+
+      - name: Print Docker Status after deployment
+        if: github.ref == 'refs/heads/master'
+        run: |
+          ssh -o StrictHostKeyChecking=no root@${{ secrets.DO_SERVER_IP }} 'docker ps'
