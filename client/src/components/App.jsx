@@ -1,19 +1,19 @@
 // client/src/components/App.jsx
-import React, { useState } from "react";
-import { Helmet } from "react-helmet";
-import Home from "./Home";
-import ThemeSwitcher from "./ThemeSwitcher";
-import "./App.css";
+import React, { useState } from 'react'
+import { Helmet } from 'react-helmet'
+import Home from './Home'
+import ThemeSwitcher from './ThemeSwitcher'
+import './App.css'
 
 const App = () => {
-  const [isNightTheme, setIsNightTheme] = useState(false);
+  const [isNightTheme, setIsNightTheme] = useState(false)
 
   const toggleTheme = () => {
-    setIsNightTheme(!isNightTheme);
+    setIsNightTheme(!isNightTheme)
     document.body.style.backgroundColor = !isNightTheme
-      ? "var(--bg-color-dark)"
-      : "var(--bg-color-light)";
-  };
+      ? 'var(--bg-color-dark)'
+      : 'var(--bg-color-light)'
+  }
 
   return (
     <div>
@@ -31,11 +31,11 @@ const App = () => {
           <ThemeSwitcher onToggleTheme={toggleTheme} />
         </nav>
       </header>
-      <main className={isNightTheme ? "night-theme" : ""}>
+      <main className={isNightTheme ? 'night-theme' : ''}>
         <Home />
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App

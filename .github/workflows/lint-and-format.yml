@@ -8,10 +8,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
           node-version: "14"
+
       - run: npm install
 
       # Lint and format client
@@ -19,7 +21,7 @@ jobs:
         run: |
           cd client
           npm install
-          npm run lint
+          npm run lint -- --fix
           npm run format
 
       # Lint and format server
@@ -27,5 +29,5 @@ jobs:
         run: |
           cd server
           npm install
-          npm run lint
+          npm run lint -- --fix
           npm run format

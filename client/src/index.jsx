@@ -1,11 +1,11 @@
 // client/src/index.jsx
-import React, { Suspense, lazy } from "react";
-import { createRoot } from "react-dom/client";
+import React, { Suspense, lazy } from 'react'
+import { createRoot } from 'react-dom/client'
 
-const App = lazy(() => import("./components/App"));
+const App = lazy(() => import('./components/App'))
 
-const rootElement = document.getElementById("root");
-const root = createRoot(rootElement);
+const rootElement = document.getElementById('root')
+const root = createRoot(rootElement)
 
 root.render(
   <React.StrictMode>
@@ -13,4 +13,4 @@ root.render(
       <App />
     </Suspense>
   </React.StrictMode>
-);
+)

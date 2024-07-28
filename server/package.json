@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "test": "mocha",
-    "lint": "eslint 'src/**/*.{js,jsx}'",
-    "format": "prettier --write 'src/**/*.{js,jsx}'"
+    "lint": "eslint '**/*.{js,jsx}'",
+    "format": "prettier --write '**/*.{js,jsx}'"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
