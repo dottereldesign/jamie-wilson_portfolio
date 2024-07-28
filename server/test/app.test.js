@@ -1,5 +1,10 @@
 const request = require("supertest");
-const server = require("../index"); // Ensure this points to your server file
+let server;
+
+before((done) => {
+  server = require("../index"); // Ensure this points to your server file
+  done();
+});
 
 describe("GET /", () => {
   it("should return 200 OK", (done) => {
@@ -7,7 +12,6 @@ describe("GET /", () => {
   });
 });
 
-// Close the server after tests
-afterAll(() => {
-  server.close();
+after((done) => {
+  server.close(done);
 });
