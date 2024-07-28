@@ -49,10 +49,14 @@ jobs:
       - name: Run backend tests
         run: |
           cd server
-          npm install --save-dev mocha supertest
+          npm install
           npm test
 
       - name: Deploy to DigitalOcean
         if: github.ref == 'refs/heads/master'
         run: |
-          ssh -o StrictHostKeyChecking=no root@${{ secrets.DO_SERVER_IP }} 'docker pull ${{ secrets.DOCKER_USERNAME }}/myapp:latest && docker-compose -f /var/www/jamie-wilson_portfolio/docker-compose.yml up -d'
+          ssh -o StrictHostKeyChecking=no root@${{ secrets.DO_SERVER_IP }} '
+            cd /var/www/jamie-wilson_portfolio &&
+            git pull origin master &&
+            docker-compose -f /var/www/jamie-wilson_portfolio/docker-compose.yml up -d
+          '
