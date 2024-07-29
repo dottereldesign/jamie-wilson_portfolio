@@ -1,9 +1,36 @@
 /* client/src/components/Navigation.css */
-nav {
+nav.navigation {
   width: min(100%, 1200px);
-  padding: 338px;
+  padding: 16px;
   margin: 0 auto;
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-family-secondary);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -5px;
+  margin-right: 10px; /* Add some space between logo and text */
+}
+
+.accent-text {
+  font-family: var(--font-family-accent);
+  font-size: 18px;
+  color: var(--text-color-light);
+  transform: rotate(-18deg);
+  line-height: 0.8;
+  margin-left: -5px;
+}
+
+[data-theme='dark'] .accent-text {
+  color: var(--text-color-dark);
 }

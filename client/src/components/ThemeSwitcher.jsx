@@ -7,11 +7,18 @@ const ThemeSwitcher = ({ isNightTheme, onToggleTheme }) => {
   const [theme, setTheme] = useState(isNightTheme)
 
   useEffect(() => {
+    const savedTheme = localStorage.getItem('isNightTheme') === 'true'
+    setTheme(savedTheme)
+  }, [])
+
+  useEffect(() => {
     setTheme(isNightTheme)
   }, [isNightTheme])
 
   const handleClick = () => {
-    setTheme((prevTheme) => !prevTheme)
+    const newTheme = !theme
+    setTheme(newTheme)
+    localStorage.setItem('isNightTheme', newTheme ? 'true' : 'false')
     onToggleTheme()
   }
 
