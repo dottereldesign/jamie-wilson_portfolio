@@ -53,13 +53,21 @@ const Navigation = ({ onToggleTheme, isNightTheme }) => {
           isNightTheme={isNightTheme}
         />
         <div className="nav-links-dropdown" ref={dropdownRef}>
-          <button className="dropbtn" onClick={toggleDropdown}>
+          <button
+            className="dropbtn"
+            onClick={toggleDropdown}
+            aria-haspopup="true"
+            aria-controls="navigation-menu"
+            aria-expanded={dropdownOpen}
+            aria-label="Toggle navigation menu"
+          >
             <MenuButton modelClass="model-1" isOpen={dropdownOpen} />
           </button>
           {dropdownOpen && (
             <div
               className="nav-links-dropdown-content"
               onClick={handleDropdownContentClick}
+              id="navigation-menu"
             >
               <NavLinks onClick={handleLinkClick} />
             </div>

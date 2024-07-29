@@ -3,7 +3,11 @@ import React from 'react'
 import './HeroSection.css'
 
 const HeroSection = () => {
-  return <h1>Coming soon</h1>
+  return (
+    <section aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Coming soon</h1>
+    </section>
+  )
 }
 
 export default HeroSection

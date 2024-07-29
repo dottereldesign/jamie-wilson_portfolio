@@ -1,11 +1,11 @@
 import React from 'react'
 import './Loading.css'
-import { ReactComponent as Loader } from './loader.svg' // Replace 'loader.svg' with your downloaded file name
+import { ReactComponent as Loader } from './loader.svg'
 
 const Loading = () => {
   return (
-    <div className="loading-container">
-      <Loader className="spinner" />
+    <div className="loading-container" role="status" aria-live="polite">
+      <Loader className="spinner" aria-label="Loading" />
     </div>
   )
 }

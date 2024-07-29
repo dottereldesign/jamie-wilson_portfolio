@@ -4,7 +4,7 @@
   --color-secondary: #03dac6;
   --color-background-light: #f0f0e8;
   --color-background-dark: #1c2135;
-  --color-text-light: #000000;
+  --color-text-light: #1c2135;
   --color-text-dark: #f0f0e8;
 }
 
@@ -17,5 +17,5 @@
 [data-theme='light'] {
   --color-background: var(--color-background-light);
   --color-text: var(--color-text-light);
-  --color-accent: #707070;
+  --color-accent: #696969;
 }
