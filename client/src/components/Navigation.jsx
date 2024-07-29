@@ -1,22 +1,71 @@
 // client/src/components/Navigation.jsx
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import ThemeSwitcher from './ThemeSwitcher'
+import NavLinks from './NavLinks'
 import PropTypes from 'prop-types'
 import './Navigation.css'
 
 const Navigation = ({ onToggleTheme, isNightTheme }) => {
+  const [dropdownOpen, setDropdownOpen] = useState(false)
+  const dropdownRef = useRef(null)
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setDropdownOpen(false)
+      }
+    }
+
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
+  }, [])
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen)
+  }
+
+  const handleDropdownContentClick = () => {
+    setDropdownOpen(false)
+  }
+
+  const handleLinkClick = (event) => {
+    event.stopPropagation()
+  }
+
   return (
     <nav className="navigation">
       <div className="nav-left">
-        <div className="logo">JW</div>
-        <div className="accent-text">
-          Jamie<br></br>Wilson
+        <a href="/" className="logo">
+          JW
+        </a>
+        <a href="/" className="accent-text">
+          Jamie
+          <br />
+          Wilson
+        </a>
+      </div>
+      <NavLinks className="nav-links" />
+      <div className="nav-right">
+        <ThemeSwitcher
+          onToggleTheme={onToggleTheme}
+          isNightTheme={isNightTheme}
+        />
+        <div className="nav-links-dropdown" ref={dropdownRef}>
+          <button className="dropbtn" onClick={toggleDropdown}>
+            &#9776;
+          </button>
+          {dropdownOpen && (
+            <div
+              className="nav-links-dropdown-content"
+              onClick={handleDropdownContentClick}
+            >
+              <NavLinks onClick={handleLinkClick} />
+            </div>
+          )}
         </div>
       </div>
-      <ThemeSwitcher
-        onToggleTheme={onToggleTheme}
-        isNightTheme={isNightTheme}
-      />
     </nav>
   )
 }

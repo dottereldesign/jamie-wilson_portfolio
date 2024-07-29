@@ -6,8 +6,8 @@
   --color-background-dark: #1c2135;
   --color-text-light: #000000;
   --color-text-dark: #f0f0e8;
-  --color-nav-background-light: #f0f0e8; /* Add this for nav light background */
-  --color-nav-background-dark: #333333; /* Add this for nav dark background */
+  --color-nav-background-light: #f0f0e8;
+  --color-nav-background-dark: #333333;
 }
 
 [data-theme='dark'] {
@@ -19,5 +19,5 @@
 [data-theme='light'] {
   --color-background: var(--color-background-light);
   --color-text: var(--color-text-light);
-  --color-nav-background: var(--color-color-background-light);
+  --color-nav-background: var(--color-nav-background-light);
 }

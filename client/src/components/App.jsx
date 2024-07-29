@@ -12,6 +12,9 @@ const App = () => {
       <header>
         <Navigation onToggleTheme={toggleTheme} isNightTheme={isNightTheme} />
       </header>
+      <main>
+        <h4>In progress...</h4>
+      </main>
     </div>
   )
 }
