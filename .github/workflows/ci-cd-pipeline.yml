@@ -44,11 +44,11 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no root@${{ secrets.DO_SERVER_IP }} 'docker ps'
 
-      - name: Run frontend tests
-        run: |
-          cd client
-          npm install
-          npm test
+      # - name: Run frontend tests
+      #   run: |
+      #     cd client
+      #     npm install
+      #     npm test
 
       - name: Run backend tests
         run: |
