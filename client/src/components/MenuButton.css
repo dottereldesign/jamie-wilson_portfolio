@@ -1,0 +1,52 @@
+.menu {
+  height: 22px;
+  width: 30px;
+  position: relative;
+  margin: auto;
+
+  border-radius: 100%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.bar {
+  height: 5px;
+  width: 30px;
+  display: block;
+
+  margin: 0 auto;
+  position: relative;
+  background-color: var(--color-text);
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+.model-1 .bar {
+  position: absolute;
+}
+
+.model-1 .bar:nth-of-type(1) {
+  top: 0px; /* Closed position */
+}
+
+.model-1 .bar:nth-of-type(2) {
+  top: 10px; /* Closed position */
+}
+
+.model-1 .bar:nth-of-type(3) {
+  top: 20px; /* Closed position */
+}
+
+.model-1.open .bar:nth-of-type(1) {
+  top: 10px;
+  transform: rotate(45deg);
+}
+
+.model-1.open .bar:nth-of-type(2) {
+  opacity: 0;
+}
+
+.model-1.open .bar:nth-of-type(3) {
+  top: 10px;
+  transform: rotate(-45deg);
+}

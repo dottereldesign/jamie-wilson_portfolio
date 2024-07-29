@@ -6,7 +6,7 @@ nav.navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-nav-background);
+  background-color: var(--color-background);
 }
 
 .nav-left {
@@ -28,7 +28,7 @@ nav.navigation {
 .accent-text {
   font-family: var(--font-family-accent);
   font-size: 18px;
-  color: var(--color-text);
+  color: var(--color-accent);
   transform: rotate(-18deg);
   line-height: 0.8;
   margin-left: -5px;
@@ -38,6 +38,7 @@ nav.navigation {
 .nav-right {
   display: flex;
   align-items: center;
+  gap: 16px;
 }
 
 .nav-links {

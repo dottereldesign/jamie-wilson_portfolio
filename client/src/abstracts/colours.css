@@ -6,18 +6,16 @@
   --color-background-dark: #1c2135;
   --color-text-light: #000000;
   --color-text-dark: #f0f0e8;
-  --color-nav-background-light: #f0f0e8;
-  --color-nav-background-dark: #333333;
 }
 
 [data-theme='dark'] {
   --color-background: var(--color-background-dark);
   --color-text: var(--color-text-dark);
-  --color-nav-background: var(--color-background-dark);
+  --color-accent: #aaaaaa;
 }
 
 [data-theme='light'] {
   --color-background: var(--color-background-light);
   --color-text: var(--color-text-light);
-  --color-nav-background: var(--color-nav-background-light);
+  --color-accent: #707070;
 }

@@ -13,7 +13,7 @@ const App = () => {
         <Navigation onToggleTheme={toggleTheme} isNightTheme={isNightTheme} />
       </header>
       <main>
-        <h4>In progress...</h4>
+        <h4>Coming soon...</h4>
       </main>
     </div>
   )

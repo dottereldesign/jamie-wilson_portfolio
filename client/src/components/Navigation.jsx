@@ -1,8 +1,8 @@
-// client/src/components/Navigation.jsx
 import React, { useState, useEffect, useRef } from 'react'
+import PropTypes from 'prop-types'
 import ThemeSwitcher from './ThemeSwitcher'
 import NavLinks from './NavLinks'
-import PropTypes from 'prop-types'
+import MenuButton from './MenuButton'
 import './Navigation.css'
 
 const Navigation = ({ onToggleTheme, isNightTheme }) => {
@@ -54,7 +54,7 @@ const Navigation = ({ onToggleTheme, isNightTheme }) => {
         />
         <div className="nav-links-dropdown" ref={dropdownRef}>
           <button className="dropbtn" onClick={toggleDropdown}>
-            &#9776;
+            <MenuButton modelClass="model-1" isOpen={dropdownOpen} />
           </button>
           {dropdownOpen && (
             <div
