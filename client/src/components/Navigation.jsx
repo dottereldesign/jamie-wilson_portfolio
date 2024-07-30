@@ -7,6 +7,7 @@ import './Navigation.css'
 
 const Navigation = ({ onToggleTheme, isNightTheme }) => {
   const [dropdownOpen, setDropdownOpen] = useState(false)
+  const [initialRender, setInitialRender] = useState(true)
   const dropdownRef = useRef(null)
 
   useEffect(() => {
@@ -20,6 +21,10 @@ const Navigation = ({ onToggleTheme, isNightTheme }) => {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside)
     }
+  }, [])
+
+  useEffect(() => {
+    setInitialRender(false)
   }, [])
 
   const toggleDropdown = () => {
@@ -61,7 +66,11 @@ const Navigation = ({ onToggleTheme, isNightTheme }) => {
             aria-expanded={dropdownOpen}
             aria-label="Toggle navigation menu"
           >
-            <MenuButton modelClass="model-1" isOpen={dropdownOpen} />
+            <MenuButton
+              modelClass="model-1"
+              isOpen={dropdownOpen}
+              initialRender={initialRender}
+            />
           </button>
           {dropdownOpen && (
             <div
