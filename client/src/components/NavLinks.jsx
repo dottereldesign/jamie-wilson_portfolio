@@ -2,7 +2,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const NavLinks = ({ className, onClick }) => (
+const NavLinks = ({ className = '', onClick = () => {} }) => (
   <div className={className}>
     <a href="#home" onClick={onClick}>
       Home
@@ -22,11 +22,6 @@ const NavLinks = ({ className, onClick }) => (
 NavLinks.propTypes = {
   className: PropTypes.string,
   onClick: PropTypes.func
-}
-
-NavLinks.defaultProps = {
-  className: '',
-  onClick: () => {}
 }
 
 export default NavLinks
