@@ -12,9 +12,6 @@ const App = () => {
       <header>
         <Navigation onToggleTheme={toggleTheme} isNightTheme={isNightTheme} />
       </header>
-      <main>
-        <h4>Coming soon...</h4>
-      </main>
     </div>
   )
 }

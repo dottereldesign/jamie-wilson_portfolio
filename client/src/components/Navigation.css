@@ -53,7 +53,7 @@ nav.navigation {
   margin: 0 10px;
   opacity: 0;
   transform: translateY(20px);
-  animation: linkFadeIn 0.8s forwards; /* Adjusted duration for the effect */
+  animation: linkFadeIn 0.8s forwards;
 }
 
 .nav-links a:nth-child(1) {
@@ -84,14 +84,14 @@ nav.navigation {
   }
   60% {
     opacity: 1;
-    transform: translateY(-5px); /* Go slightly above the final position */
+    transform: translateY(-5px);
   }
   80% {
-    transform: translateY(2px); /* Slightly below the final position */
+    transform: translateY(2px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0); /* Final position */
+    transform: translateY(0);
   }
 }
 
@@ -105,7 +105,7 @@ nav.navigation {
   border: none;
   color: var(--color-text);
   cursor: pointer;
-  font-size: 24px; /* Adjust font size for hamburger icon */
+  font-size: 24px;
   height: 30px;
 }
 
@@ -133,7 +133,7 @@ nav.navigation {
   width: 100%;
   opacity: 0;
   transform: translateY(20px);
-  animation: linkFadeIn 0.8s forwards; /* Adjusted duration for the effect */
+  animation: linkFadeIn 0.8s forwards;
 }
 
 .nav-links-dropdown-content a:nth-child(1) {
@@ -157,13 +157,12 @@ nav.navigation {
   transform: translateY(0);
 }
 
-/* Media query to switch to horizontal nav */
 @media (min-width: 1000px) {
   .nav-links {
     display: flex;
     position: static;
     transform: none;
-    animation: none; /* Prevent initial animation for larger screens */
+    animation: none;
   }
 
   .nav-links-dropdown {
