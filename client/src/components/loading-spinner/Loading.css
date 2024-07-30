@@ -1,8 +1,8 @@
 /* client/src/components/App.css */
-@import '../abstracts/colours.css';
-@import '../abstracts/fonts.css';
-@import '../base/reset.css';
-@import '../base/typography.css';
+@import '../../abstracts/colours.css';
+@import '../../abstracts/fonts.css';
+@import '../../base/reset.css';
+@import '../../base/typography.css';
 
 .loading-container {
   display: flex;

@@ -1,6 +1,6 @@
 // client/src/components/App.jsx
 import React from 'react'
-import Navigation from './Navigation'
+import Navigation from './navigation/Navigation'
 import './App.css'
 import useToggleTheme from '../hooks/useToggleTheme'
 
