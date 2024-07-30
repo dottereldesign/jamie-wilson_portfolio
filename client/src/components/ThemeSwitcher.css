@@ -1,26 +1,13 @@
 /* client/src/components/ThemeSwitcher.css */
-:root {
-  --bg-color-light: #f0f0e8;
-  --bg-color-dark: #1c2135;
-  --border-color-light: #1c2135;
-  --border-color-dark: #f0f0e8;
-  --sun-color: #fabc1c;
-  --moon-color: #fffdf2;
-  --day-bg-color: #0dbdf6;
-  --night-bg-color: #272a30;
-  --cloud-color: #fffdf2;
-  --star-color: #fffdf2;
-}
-
 .theme-switcher-grid {
   display: grid;
   grid-template-columns: repeat(54, 1px);
   grid-template-rows: repeat(24, 1px);
   gap: 0;
   position: relative;
-  background-color: var(--day-bg-color);
+  background-color: var(--btn-day-bg-color);
   border-radius: 49px;
-  border: 1px solid var(--border-color-light);
+  border: 1px solid var(--btn-border-color-light);
   cursor: pointer;
   transition:
     background-color 0.8s ease,
@@ -30,12 +17,12 @@
 }
 
 .theme-switcher-grid.night-theme {
-  background-color: var(--night-bg-color);
-  border-color: var(--border-color-dark);
+  background-color: var(--btn-night-bg-color);
+  border-color: var(--btn-border-color-dark);
 }
 
 .sun {
-  background-color: var(--sun-color);
+  background-color: var(--btn-sun-color);
   grid-column: 3 / 23;
   grid-row: 3 / 23;
   border-radius: 50%;
@@ -47,7 +34,7 @@
 
 .theme-switcher-grid.night-theme .sun {
   grid-column: 33 / 53;
-  background-color: var(--moon-color);
+  background-color: var(--btn-moon-color);
 }
 
 .moon-overlay {
@@ -57,7 +44,7 @@
     left 0.8s ease,
     background-color 0.8s ease;
   z-index: 1;
-  background-color: var(--day-bg-color);
+  background-color: var(--btn-day-bg-color);
 }
 
 .theme-switcher-grid.night-theme .moon-overlay {
@@ -66,11 +53,11 @@
   top: calc(4 / 29 * 100%);
   width: 18px;
   height: 18px;
-  background-color: var(--night-bg-color);
+  background-color: var(--btn-night-bg-color);
 }
 
 .cloud-ball {
-  background-color: var(--cloud-color);
+  background-color: var(--btn-cloud-color);
   border-radius: 50%;
   width: 9px;
   height: 9px;
@@ -128,7 +115,7 @@
 }
 
 .star {
-  background-color: var(--star-color);
+  background-color: var(--btn-star-color);
   width: 1px;
   height: 1px;
   position: absolute;

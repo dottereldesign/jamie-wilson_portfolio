@@ -1,11 +1,24 @@
 /* client/src/abstracts/colours.css */
 :root {
+  /* colour pallette */
   --color-primary: #6200ea;
   --color-secondary: #03dac6;
   --color-background-light: #f0f0e8;
   --color-background-dark: #1c2135;
   --color-text-light: #1c2135;
   --color-text-dark: #f0f0e8;
+
+  /* theme switcher btn */
+  --btn-bg-color-light: #f0f0e8;
+  --btn-bg-color-dark: #1c2135;
+  --btn-border-color-light: #1c2135;
+  --btn-border-color-dark: #f0f0e8;
+  --btn-sun-color: #fabc1c;
+  --btn-moon-color: #fffdf2;
+  --btn-day-bg-color: #0dbdf6;
+  --btn-night-bg-color: #272a30;
+  --btn-cloud-color: #fffdf2;
+  --btn-star-color: #fffdf2;
 }
 
 [data-theme='dark'] {

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Loading.css'
-import { ReactComponent as Loader } from './loader.svg'
+import { ReactComponent as Loader } from '../assets/images/loader.svg'
 
 const Loading = () => {
   return (
