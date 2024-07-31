@@ -2,12 +2,12 @@
 .hero-section {
   width: min(100%, 1200px);
   margin: 32px auto 0 auto;
-  text-align: center;
+  text-align: left;
 }
 
 .hero-section__subtitle {
   font-family: 'Inter', sans-serif;
-  font-size: 20px;
+  font-size: var(--fs-500);
   color: var(--color-text);
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -17,7 +17,7 @@
 
 .hero-section__title {
   font-family: 'Inter', sans-serif;
-  font-size: 64px;
+  font-size: var(--fs-900);
   font-weight: 900;
   color: var(--color-text);
   margin-top: 8px;
