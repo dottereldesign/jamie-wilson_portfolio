@@ -2,6 +2,8 @@
 import React from 'react'
 import Navigation from './navigation/Navigation'
 import './App.css'
+import Footer from './footer/Footer'
+import HeroSection from './hero-section/HeroSection'
 import useToggleTheme from '../hooks/useToggleTheme'
 
 const App = () => {
@@ -12,6 +14,10 @@ const App = () => {
       <header>
         <Navigation onToggleTheme={toggleTheme} isNightTheme={isNightTheme} />
       </header>
+      <main>
+        <HeroSection />
+      </main>
+      <Footer />
     </div>
   )
 }

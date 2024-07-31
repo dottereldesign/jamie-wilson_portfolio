@@ -12,8 +12,3 @@ body {
 main {
   padding: 16px;
 }
-
-.app-container {
-  width: min(100%, 1200px);
-  margin: 0 auto;
-}

@@ -1,0 +1,15 @@
+/* client/src/components/footer/Footer.css */
+.footer {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 16px auto 0 auto;
+}
