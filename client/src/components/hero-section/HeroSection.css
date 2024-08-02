@@ -7,6 +7,7 @@
 
 .hero-section__subtitle {
   font-family: 'Inter', sans-serif;
+  display: inline-block;
   font-size: var(--fs-500);
   color: var(--color-text);
   margin-bottom: 10px;
@@ -14,7 +15,8 @@
   font-weight: 400;
   line-height: 1;
   opacity: 0;
-  animation: fadeIn 1.5s ease-out forwards;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
 }
 
 .hero-section__title {
@@ -25,12 +27,14 @@
   margin-top: 8px;
   line-height: 1;
   opacity: 0;
-  animation: fadeIn 1.5s ease-out forwards;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
   animation-delay: 0.5s; /* Title starts 0.5s after subtitle */
 }
 
-@keyframes fadeIn {
+@keyframes fadeInUp {
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }

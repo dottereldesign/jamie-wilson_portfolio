@@ -1,6 +1,7 @@
 // client/src/components/hero-section/HeroSection.jsx
 import React from 'react'
 import './HeroSection.css'
+import SignatureJW from './SignatureJW'
 
 const HeroSection = () => {
   return (
@@ -9,6 +10,7 @@ const HeroSection = () => {
       <h1 className="hero-section__title" id="hero-section__heading">
         Jamie Wilson
       </h1>
+      <SignatureJW />
     </section>
   )
 }
