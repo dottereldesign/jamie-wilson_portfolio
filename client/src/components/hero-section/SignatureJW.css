@@ -8,7 +8,7 @@
 svg {
   stroke-dasharray: var(--svg-length);
   stroke-dashoffset: var(--svg-length);
-  animation: signature 1.5s cubic-bezier(0.65, 0.05, 0.36, 1) 1.5s forwards; /* Using cubic-bezier for more natural pacing */
+  animation: signature 1.5s cubic-bezier(0.65, 0.05, 0.36, 1) 4s forwards; /* Using cubic-bezier for more natural pacing */
 }
 
 @keyframes signature {
