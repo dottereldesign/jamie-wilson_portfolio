@@ -45,11 +45,6 @@ const Navigation = ({ onToggleTheme, isNightTheme }) => {
         <a href="/" className="logo">
           JW
         </a>
-        <a href="/" className="accent-text">
-          Jamie
-          <br />
-          Wilson
-        </a>
       </div>
       <NavLinks className="nav-links" />
       <div className="nav-right">
