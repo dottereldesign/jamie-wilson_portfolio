@@ -37,9 +37,9 @@
 
 .hero-section__description {
   font-family: 'Inter', sans-serif;
-  font-size: 16.5px;
+  font-size: var(--fs-500);
   color: var(--color-text);
-
+  font-weight: 300;
   line-height: 1.5;
   opacity: 0;
 
