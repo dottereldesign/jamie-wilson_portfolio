@@ -1,0 +1,50 @@
+/* client/src/components/hero-section/LoadingBars.css */
+.loading-bars {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.loading-bar {
+  width: 30%;
+  text-align: center;
+}
+
+.loading-bar__label {
+  margin-bottom: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: var(--fs-500);
+  color: var(--color-text);
+  text-align: left;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.loading-bar__progress {
+  height: 20px;
+  background-color: var(--color-primary);
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+
+.loading-bar__progress.complete {
+  width: 100%;
+  background-color: #4ef272;
+}
+
+.loading-bar__status {
+  margin-top: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: var(--fs-300);
+  color: var(--color-text);
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.loading-bar__status.complete {
+  opacity: 1;
+}
+
+.loading-bar__label.show {
+  opacity: 1;
+}

@@ -2,6 +2,7 @@
 import React from 'react'
 import './HeroSection.css'
 import SignatureJW from './SignatureJW'
+import LoadingBars from './LoadingBars'
 
 const HeroSection = () => {
   return (
@@ -14,6 +15,7 @@ const HeroSection = () => {
         Turning caffeine into code <br />
         and ideas into interactive experiences.
       </p>
+      <LoadingBars />
       <SignatureJW />
     </section>
   )
