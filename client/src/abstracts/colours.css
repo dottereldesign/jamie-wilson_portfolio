@@ -32,10 +32,14 @@
   --color-background: var(--color-background-dark);
   --color-text: var(--color-text-dark);
   --color-accent: #aaaaaa;
+  --color-background-inverted: var(--color-background-light);
+  --color-text-inverted: var(--color-text-light);
 }
 
 [data-theme='light'] {
   --color-background: var(--color-background-light);
   --color-text: var(--color-text-light);
   --color-accent: #696969;
+  --color-background-inverted: var(--color-background-dark);
+  --color-text-inverted: var(--color-text-dark);
 }
