@@ -5,6 +5,7 @@ import './App.css'
 import Footer from './footer/Footer'
 import HeroSection from './hero-section/HeroSection'
 import useToggleTheme from '../hooks/useToggleTheme'
+import Carousel from './carousel/Carousel' // Corrected import
 
 const App = () => {
   const [isNightTheme, toggleTheme] = useToggleTheme()
@@ -16,6 +17,7 @@ const App = () => {
       </header>
       <main>
         <HeroSection />
+        <Carousel /> {/* Use the new component */}
       </main>
       <Footer />
     </div>

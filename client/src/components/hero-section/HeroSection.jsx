@@ -29,7 +29,7 @@ const HeroSection = () => {
       </h1>
       <p className="hero-section__description">
         Turning caffeine into code <br />
-        and ideas into interactive experiences.
+        and ideas into interactive experiences
       </p>
       <LoadingBars start={loadingBarsStart} />
       <SignatureJW start={signatureStart} />
