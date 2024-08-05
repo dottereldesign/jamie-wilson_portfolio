@@ -9,15 +9,16 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: var(--color-background-light);
+  background-color: var(--color-background);
 }
 
 .spinner {
-  border: 8px solid var(--color-background-dark);
+  border: 8px solid var(--color-background);
   border-top: 8px solid var(--color-primary);
   border-radius: 50%;
   width: 60px;
   height: 60px;
+  display: none;
   animation: spin 2s linear infinite;
 }
 

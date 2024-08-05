@@ -19,6 +19,13 @@
   --btn-night-bg-color: #272a30;
   --btn-cloud-color: #fffdf2;
   --btn-star-color: #fffdf2;
+
+  --color-glow: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Adjust this color to your preference */
 }
 
 [data-theme='dark'] {
