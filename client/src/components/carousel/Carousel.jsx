@@ -122,7 +122,7 @@ const Carousel = () => {
                   alt="avatar"
                 />
                 <div className="project__detail">
-                  <h2 className="project__name">Homemade Ice Cream</h2>
+                  <h2 className="project__name">Rock, Paper, Scissors</h2>
                   <p className="project__author">Evelyn Taylor</p>
                 </div>
                 <div className="project__actions">
