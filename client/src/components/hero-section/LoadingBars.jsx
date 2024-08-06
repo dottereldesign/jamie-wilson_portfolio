@@ -7,9 +7,9 @@ const LoadingBars = () => {
 
   useEffect(() => {
     const timers = [
-      setTimeout(() => setCompleted([true, false, false]), 900),
-      setTimeout(() => setCompleted([true, true, false]), 1900),
-      setTimeout(() => setCompleted([true, true, true]), 2900)
+      setTimeout(() => setCompleted([true, false, false]), 500),
+      setTimeout(() => setCompleted([true, true, false]), 1300),
+      setTimeout(() => setCompleted([true, true, true]), 2100)
     ]
     return () => timers.forEach((timer) => clearTimeout(timer))
   }, [])
@@ -18,7 +18,7 @@ const LoadingBars = () => {
     <div className="loading-bars">
       <div className="loading-bar">
         <div className={`loading-bar__label ${completed[0] ? 'show' : ''}`}>
-          Certificate
+          Certificate in Information Technology
         </div>
         <div
           className={`loading-bar__progress ${completed[0] ? 'complete' : ''}`}
@@ -29,7 +29,7 @@ const LoadingBars = () => {
       </div>
       <div className="loading-bar">
         <div className={`loading-bar__label ${completed[1] ? 'show' : ''}`}>
-          Diploma
+          Diploma in Web Development & Design
         </div>
         <div
           className={`loading-bar__progress ${completed[1] ? 'complete' : ''}`}
@@ -40,7 +40,7 @@ const LoadingBars = () => {
       </div>
       <div className="loading-bar">
         <div className={`loading-bar__label ${completed[2] ? 'show' : ''}`}>
-          Degree
+          Bachelors Degree in Software Development
         </div>
         <div
           className="loading-bar__progress"

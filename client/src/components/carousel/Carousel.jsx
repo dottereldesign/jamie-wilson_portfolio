@@ -177,7 +177,7 @@ const Carousel = () => {
             <div className="swiper-slide project">
               <img
                 className="project__img"
-                src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/7443d18f-26b6-47eb-bfca-541fb72cee65"
+                src={projectRpsImage}
                 alt="project"
               />
               <div className="project__body">
@@ -240,7 +240,7 @@ const Carousel = () => {
             <div className="swiper-slide project">
               <img
                 className="project__img"
-                src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/24566dbf-61a2-4bd0-bb29-ef1773364eba"
+                src={projectRpsImage}
                 alt="project"
               />
               <div className="project__body">
@@ -303,7 +303,7 @@ const Carousel = () => {
             <div className="swiper-slide project">
               <img
                 className="project__img"
-                src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/a208eb17-a847-4e04-be2c-d7ec2071ae45"
+                src={projectRpsImage}
                 alt="project"
               />
               <div className="project__body">
@@ -366,7 +366,7 @@ const Carousel = () => {
             <div className="swiper-slide project">
               <img
                 className="project__img"
-                src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/208fe8f5-9d7f-4b83-9249-43601bb4c500"
+                src={projectRpsImage}
                 alt="project"
               />
               <div className="project__body">
@@ -429,7 +429,7 @@ const Carousel = () => {
             <div className="swiper-slide project">
               <img
                 className="project__img"
-                src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/e4f91d6d-ee11-4ff7-9e6f-0fb3f9a78598"
+                src={projectRpsImage}
                 alt="project"
               />
               <div className="project__body">
