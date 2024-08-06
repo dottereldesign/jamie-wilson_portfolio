@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import Swiper from 'swiper/bundle'
 import 'swiper/swiper-bundle.min.css'
 import './Carousel.css'
+import projectRpsImage from '../../assets/images/project-rps.png'
 
 const Carousel = () => {
   useEffect(() => {
@@ -112,9 +113,10 @@ const Carousel = () => {
             <div className="swiper-slide project">
               <img
                 className="project__img"
-                src="https://github.com/ecemgo/mini-samples-great-tricks/assets/13468728/defebc72-ea17-41c7-9bb6-70b3974a93b7"
+                src={projectRpsImage}
                 alt="project"
               />
+
               <div className="project__body">
                 <img
                   className="project__avatar"
