@@ -1,6 +1,6 @@
 /* client/src/components/carousel/Carousel.css */
-@import 'swiper/css';
-@import 'swiper/css/scrollbar';
+@import 'swiper/swiper-bundle.min.css';
+@import 'swiper/components/scrollbar/scrollbar.min.css';
 
 .carousel {
   --clr-text: var(--color-text-dark);
@@ -10,6 +10,9 @@
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1s ease-out forwards;
+  overflow: hidden;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .carousel__container {
@@ -51,7 +54,6 @@
   padding: 16px 16px 0;
   margin-bottom: 16px;
 }
-
 .project__img {
   width: 100%;
   max-width: 400px;

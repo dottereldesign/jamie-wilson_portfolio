@@ -1,7 +1,7 @@
 // client/src/components/carousel/Carousel.jsx
 import React, { useEffect } from 'react'
-import 'swiper/swiper-bundle.min.css'
 import Swiper from 'swiper/bundle'
+import 'swiper/swiper-bundle.min.css'
 import './Carousel.css'
 import projectRpsImage from '../../assets/images/project-rps.png'
 import projectArtImage from '../../assets/images/project-art.png'
@@ -85,13 +85,12 @@ const Carousel = () => {
       speed: 400,
       mousewheel: {
         invert: false,
-        sensitivity: 1 // Adjust sensitivity as needed
+        sensitivity: 1
       },
       scrollbar: {
         el: '.swiper-scrollbar',
         draggable: true
       },
-
       slidesPerView: 1,
       spaceBetween: 10,
       breakpoints: {
@@ -116,15 +115,12 @@ const Carousel = () => {
       <div className="carousel__container">
         <div className="swiper">
           <div className="swiper-wrapper">
-            {/* Repeat for each project */}
-
             <div className="swiper-slide project">
               <img
                 className="project__img"
                 src={projectRpsImage}
                 alt="project"
               />
-
               <div className="project__body">
                 <div className="project__detail">
                   <h2 className="project__name">Rock, Paper, Scissors</h2>
@@ -135,10 +131,9 @@ const Carousel = () => {
             <div className="swiper-slide project">
               <img
                 className="project__img"
-                src={projectArtImage} // Correct variable name
+                src={projectArtImage}
                 alt="project"
               />
-
               <div className="project__body">
                 <div className="project__detail">
                   <h2 className="project__name">Modern Art Gallery</h2>
@@ -149,7 +144,7 @@ const Carousel = () => {
             <div className="swiper-slide project">
               <img
                 className="project__img"
-                src={projectMakerImage} // Correct variable name
+                src={projectMakerImage}
                 alt="project"
               />
               <div className="project__body">
@@ -166,7 +161,6 @@ const Carousel = () => {
                 src={projectNewsImage}
                 alt="project"
               />
-
               <div className="project__body">
                 <div className="project__detail">
                   <h2 className="project__name">News (landing page)</h2>
@@ -181,7 +175,6 @@ const Carousel = () => {
                 src={projectWorkitImage}
                 alt="project"
               />
-
               <div className="project__body">
                 <div className="project__detail">
                   <h2 className="project__name">Workit (landing page)</h2>
@@ -196,7 +189,6 @@ const Carousel = () => {
                 src={projectAgoraImage}
                 alt="project"
               />
-
               <div className="project__body">
                 <div className="project__detail">
                   <h2 className="project__name">Agora</h2>
