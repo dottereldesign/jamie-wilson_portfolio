@@ -110,6 +110,7 @@ const Carousel = () => {
         <div className="swiper">
           <div className="swiper-wrapper">
             {/* Repeat for each project */}
+
             <div className="swiper-slide project">
               <img
                 className="project__img"
@@ -125,51 +126,7 @@ const Carousel = () => {
                 />
                 <div className="project__detail">
                   <h2 className="project__name">Rock, Paper, Scissors</h2>
-                  <p className="project__author">Evelyn Taylor</p>
-                </div>
-                <div className="project__actions">
-                  <a className="project__like" href="#">
-                    <i className="fas fa-heart"></i>
-                  </a>
-                  <button
-                    className="project__actions-controller"
-                    data-target="project1"
-                    aria-controls="project-actions-content"
-                    aria-expanded="false"
-                  >
-                    <i className="fa-solid fa-ellipsis fa-2xl"></i>
-                  </button>
-                  <div
-                    className="project__actions-content"
-                    id="project1"
-                    data-visible="false"
-                    aria-hidden="true"
-                  >
-                    <ul
-                      role="list"
-                      className="project__actions-list"
-                      data-spacing="small"
-                    >
-                      <li>
-                        <a className="project__actions-link" href="#">
-                          <i className="fa-solid fa-folder-open"></i>
-                          <span>Add to Collection</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a className="project__actions-link" href="#">
-                          <i className="fa-solid fa-eye"></i>
-                          <span>Show the Project</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a className="project__actions-link" href="#">
-                          <i className="fa-solid fa-user-plus"></i>
-                          <span>Follow the User</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+                  <p className="project__author">HTML CSS JS</p>
                 </div>
               </div>
             </div>
