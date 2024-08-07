@@ -7,9 +7,9 @@ const LoadingBars = () => {
 
   useEffect(() => {
     const timers = [
-      setTimeout(() => setCompleted([true, false, false]), 500),
-      setTimeout(() => setCompleted([true, true, false]), 1300),
-      setTimeout(() => setCompleted([true, true, true]), 2100)
+      setTimeout(() => setCompleted([true, false, false]), 700),
+      setTimeout(() => setCompleted([true, true, false]), 1500),
+      setTimeout(() => setCompleted([true, true, true]), 2300)
     ]
     return () => timers.forEach((timer) => clearTimeout(timer))
   }, [])

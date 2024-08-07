@@ -32,7 +32,7 @@ const HeroSection = () => {
         and ideas into interactive experiences
       </p>
       <LoadingBars start={loadingBarsStart} />
-      <SignatureJW start={signatureStart} />
+      {/* <SignatureJW start={signatureStart} /> */}
     </section>
   )
 }

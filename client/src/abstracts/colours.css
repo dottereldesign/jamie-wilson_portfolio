@@ -1,4 +1,3 @@
-/* client/src/abstracts/colours.css */
 :root {
   /* colour pallette */
   --color-primary: #6200ea;
@@ -20,12 +19,7 @@
   --btn-cloud-color: #fffdf2;
   --btn-star-color: #fffdf2;
 
-  --color-glow: rgba(
-    255,
-    255,
-    255,
-    0.5
-  ); /* Adjust this color to your preference */
+  --color-glow: rgba(255, 255, 255, 0.5);
 }
 
 [data-theme='dark'] {

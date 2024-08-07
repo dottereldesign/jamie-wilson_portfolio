@@ -94,13 +94,15 @@ const Carousel = () => {
       slidesPerView: 1,
       spaceBetween: 10,
       breakpoints: {
-        900: {
+        640: {
+          // Tablets
           slidesPerView: 2,
-          spaceBetween: 20
+          spaceBetween: 8
         },
-        1200: {
-          slidesPerView: 3,
-          spaceBetween: 20
+        1024: {
+          // Desktops
+          slidesPerView: 4,
+          spaceBetween: 8
         }
       }
     })
