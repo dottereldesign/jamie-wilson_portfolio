@@ -4,6 +4,11 @@ import Swiper from 'swiper/bundle'
 import 'swiper/swiper-bundle.min.css'
 import './Carousel.css'
 import projectRpsImage from '../../assets/images/project-rps.png'
+import projectArtImage from '../../assets/images/project-art.png' // Correct variable name
+import projectMakerImage from '../../assets/images/project-maker.png' // Correct variable name
+import projectNewsImage from '../../assets/images/project-news.png' // Correct variable name
+import projectWorkitImage from '../../assets/images/project-workit.png' // Correct variable name
+import projectAgoraImage from '../../assets/images/project-agora.png' // Correct variable name
 
 const Carousel = () => {
   useEffect(() => {
@@ -79,12 +84,14 @@ const Carousel = () => {
       grabCursor: true,
       speed: 400,
       mousewheel: {
-        invert: false
+        invert: false,
+        sensitivity: 1 // Adjust sensitivity as needed
       },
       scrollbar: {
         el: '.swiper-scrollbar',
         draggable: true
       },
+
       slidesPerView: 1,
       spaceBetween: 10,
       breakpoints: {
@@ -128,43 +135,27 @@ const Carousel = () => {
             <div className="swiper-slide project">
               <img
                 className="project__img"
-                src={projectRpsImage}
+                src={projectArtImage} // Correct variable name
                 alt="project"
               />
 
               <div className="project__body">
                 <div className="project__detail">
-                  <h2 className="project__name">Rock, Paper, Scissors</h2>
-                  <p className="project__author">HTML CSS JS</p>
+                  <h2 className="project__name">Modern Art Gallery</h2>
+                  <p className="project__author">HTML CSS</p>
                 </div>
               </div>
             </div>
             <div className="swiper-slide project">
               <img
                 className="project__img"
-                src={projectRpsImage}
+                src={projectMakerImage} // Correct variable name
                 alt="project"
               />
-
               <div className="project__body">
                 <div className="project__detail">
-                  <h2 className="project__name">Rock, Paper, Scissors</h2>
-                  <p className="project__author">HTML CSS JS</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="swiper-slide project">
-              <img
-                className="project__img"
-                src={projectRpsImage}
-                alt="project"
-              />
-
-              <div className="project__body">
-                <div className="project__detail">
-                  <h2 className="project__name">Rock, Paper, Scissors</h2>
-                  <p className="project__author">HTML CSS JS</p>
+                  <h2 className="project__name">Maker (landing page)</h2>
+                  <p className="project__author">HTML CSS</p>
                 </div>
               </div>
             </div>
@@ -172,13 +163,13 @@ const Carousel = () => {
             <div className="swiper-slide project">
               <img
                 className="project__img"
-                src={projectRpsImage}
+                src={projectNewsImage}
                 alt="project"
               />
 
               <div className="project__body">
                 <div className="project__detail">
-                  <h2 className="project__name">Rock, Paper, Scissors</h2>
+                  <h2 className="project__name">News (landing page)</h2>
                   <p className="project__author">HTML CSS JS</p>
                 </div>
               </div>
@@ -187,14 +178,29 @@ const Carousel = () => {
             <div className="swiper-slide project">
               <img
                 className="project__img"
-                src={projectRpsImage}
+                src={projectWorkitImage}
                 alt="project"
               />
 
               <div className="project__body">
                 <div className="project__detail">
-                  <h2 className="project__name">Rock, Paper, Scissors</h2>
+                  <h2 className="project__name">Workit (landing page)</h2>
                   <p className="project__author">HTML CSS JS</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="swiper-slide project">
+              <img
+                className="project__img"
+                src={projectAgoraImage}
+                alt="project"
+              />
+
+              <div className="project__body">
+                <div className="project__detail">
+                  <h2 className="project__name">Agora</h2>
+                  <p className="project__author">CSS JS MySQL Laravel</p>
                 </div>
               </div>
             </div>
