@@ -1,14 +1,14 @@
 // client/src/components/carousel/Carousel.jsx
 import React, { useEffect } from 'react'
-import Swiper from 'swiper/bundle'
 import 'swiper/swiper-bundle.min.css'
+import Swiper from 'swiper/bundle'
 import './Carousel.css'
 import projectRpsImage from '../../assets/images/project-rps.png'
-import projectArtImage from '../../assets/images/project-art.png' // Correct variable name
-import projectMakerImage from '../../assets/images/project-maker.png' // Correct variable name
-import projectNewsImage from '../../assets/images/project-news.png' // Correct variable name
-import projectWorkitImage from '../../assets/images/project-workit.png' // Correct variable name
-import projectAgoraImage from '../../assets/images/project-agora.png' // Correct variable name
+import projectArtImage from '../../assets/images/project-art.png'
+import projectMakerImage from '../../assets/images/project-maker.png'
+import projectNewsImage from '../../assets/images/project-news.png'
+import projectWorkitImage from '../../assets/images/project-workit.png'
+import projectAgoraImage from '../../assets/images/project-agora.png'
 
 const Carousel = () => {
   useEffect(() => {

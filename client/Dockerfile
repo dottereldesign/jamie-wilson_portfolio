@@ -1,20 +1,21 @@
+# client/Dockerfile
 # Use an official Node.js runtime as a parent image
 FROM node:18
 
-# Set the working directory in the container
+# Set the working directory
 WORKDIR /app
 
-# Copy the package.json and package-lock.json files to the container
+# Copy package.json and package-lock.json
 COPY package*.json ./
 
-# Install project dependencies
+# Install dependencies
 RUN npm install
 
-# Copy the rest of the project files to the container
-COPY . .
+# Install the missing Babel plugin
+RUN npm install --save-dev @babel/plugin-proposal-private-property-in-object
 
-# Set environment variable to use legacy OpenSSL provider
-ENV NODE_OPTIONS=--openssl-legacy-provider
+# Copy the rest of the application
+COPY . .
 
 # Build the app
 RUN npm run build
@@ -22,9 +23,5 @@ RUN npm run build
 # Install serve to serve the build directory
 RUN npm install -g serve
 
-# Expose the port the app runs on
-EXPOSE 3000
-
-# Define the command to run the app
+# Set the command to run the app
 CMD ["serve", "-s", "build"]
-
