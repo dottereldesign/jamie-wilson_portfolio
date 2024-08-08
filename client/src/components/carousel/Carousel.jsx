@@ -126,7 +126,11 @@ const Carousel = () => {
               <div className="project__body">
                 <div className="project__detail">
                   <h2 className="project__name">Rock, Paper, Scissors</h2>
-                  <p className="project__author">HTML CSS JS</p>
+                  <p className="project__author">
+                    <span className="coding-language">HTML</span>
+                    <span className="coding-language">CSS</span>
+                    <span className="coding-language">JS</span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -139,7 +143,10 @@ const Carousel = () => {
               <div className="project__body">
                 <div className="project__detail">
                   <h2 className="project__name">Modern Art Gallery</h2>
-                  <p className="project__author">HTML CSS</p>
+                  <p className="project__author">
+                    <span className="coding-language">HTML</span>
+                    <span className="coding-language">CSS</span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -152,11 +159,13 @@ const Carousel = () => {
               <div className="project__body">
                 <div className="project__detail">
                   <h2 className="project__name">Maker (landing page)</h2>
-                  <p className="project__author">HTML CSS</p>
+                  <p className="project__author">
+                    <span className="coding-language">HTML</span>
+                    <span className="coding-language">CSS</span>
+                  </p>
                 </div>
               </div>
             </div>
-
             <div className="swiper-slide project">
               <img
                 className="project__img"
@@ -166,11 +175,14 @@ const Carousel = () => {
               <div className="project__body">
                 <div className="project__detail">
                   <h2 className="project__name">News (landing page)</h2>
-                  <p className="project__author">HTML CSS JS</p>
+                  <p className="project__author">
+                    <span className="coding-language">HTML</span>
+                    <span className="coding-language">CSS</span>
+                    <span className="coding-language">JS</span>
+                  </p>
                 </div>
               </div>
             </div>
-
             <div className="swiper-slide project">
               <img
                 className="project__img"
@@ -180,11 +192,14 @@ const Carousel = () => {
               <div className="project__body">
                 <div className="project__detail">
                   <h2 className="project__name">Workit (landing page)</h2>
-                  <p className="project__author">HTML CSS JS</p>
+                  <p className="project__author">
+                    <span className="coding-language">HTML</span>
+                    <span className="coding-language">CSS</span>
+                    <span className="coding-language">JS</span>
+                  </p>
                 </div>
               </div>
             </div>
-
             <div className="swiper-slide project">
               <img
                 className="project__img"
@@ -194,7 +209,12 @@ const Carousel = () => {
               <div className="project__body">
                 <div className="project__detail">
                   <h2 className="project__name">Agora</h2>
-                  <p className="project__author">CSS JS MySQL Laravel</p>
+                  <p className="project__author">
+                    <span className="coding-language">CSS</span>
+                    <span className="coding-language">JS</span>
+                    <span className="coding-language">MySQL</span>
+                    <span className="coding-language">Laravel</span>
+                  </p>
                 </div>
               </div>
             </div>
