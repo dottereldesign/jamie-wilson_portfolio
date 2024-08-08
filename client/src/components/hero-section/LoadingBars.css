@@ -1,14 +1,15 @@
 /* client/src/components/hero-section/LoadingBars.css */
 .loading-bars {
   display: flex;
-  flex-direction: column;
+
   justify-content: space-between;
   gap: 16px;
-  margin: 20px 0;
+  margin: 16px auto 0 auto;
+  width: min(100%, 1000px);
 }
 
 .loading-bar {
-  width: min(100%, 350px);
+  width: min(100%, 320px);
 
   text-align: center;
 }
@@ -24,10 +25,11 @@
 }
 
 .loading-bar__progress {
-  height: 20px;
+  height: 24px;
   background-color: var(--color-primary);
   width: 0;
   transition: width 1s ease-in-out;
+  border-radius: 4px;
 }
 
 .loading-bar__progress.complete {

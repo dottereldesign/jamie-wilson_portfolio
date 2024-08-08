@@ -2,13 +2,13 @@
   /* colour pallette */
   --color-primary: #6200ea;
   --color-secondary: #03dac6;
-  --color-background-light: #f0f0e8;
+  --color-background-light: #fff8e8;
   --color-background-dark: #1c2135;
   --color-text-light: #1c2135;
   --color-text-dark: #f0f0e8;
 
   /* theme switcher btn */
-  --btn-bg-color-light: #f0f0e8;
+  --btn-bg-color-light: #fff8e8;
   --btn-bg-color-dark: #1c2135;
   --btn-border-color-light: #1c2135;
   --btn-border-color-dark: #f0f0e8;

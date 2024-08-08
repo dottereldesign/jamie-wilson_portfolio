@@ -29,7 +29,7 @@ const LoadingBars = () => {
       </div>
       <div className="loading-bar">
         <div className={`loading-bar__label ${completed[1] ? 'show' : ''}`}>
-          Diploma in Web Development & Design
+          Diploma in Web Dev & Design
         </div>
         <div
           className={`loading-bar__progress ${completed[1] ? 'complete' : ''}`}
@@ -40,7 +40,7 @@ const LoadingBars = () => {
       </div>
       <div className="loading-bar">
         <div className={`loading-bar__label ${completed[2] ? 'show' : ''}`}>
-          Bachelors Degree in Software Development
+          Bachelor&#39;s in Software Development
         </div>
         <div
           className="loading-bar__progress"
