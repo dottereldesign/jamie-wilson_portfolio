@@ -49,7 +49,7 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   padding: 8px 8px 0;
   margin-bottom: 16px;
-  height: 450px;
+  height: 484px;
 }
 
 .project:nth-child(1) {
@@ -136,7 +136,7 @@
 .project__author span {
   background-color: #fabc1c;
   border-radius: 4px;
-  padding: 2px 6px;
+  padding: 1px 10px;
   color: black;
   font-weight: 600;
 }
@@ -147,6 +147,63 @@
   object-fit: cover;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.project__number {
+  font-size: var(--fs-600);
+  font-weight: var(--fw-700);
+  color: var(--color-text);
+  line-height: 1;
+}
+
+.project__genre {
+  line-height: 1;
+  font-size: 13px;
+  font-weight: var(--fw-500);
+  color: var(--color-text);
+  margin-bottom: 16px;
+  margin-top: 4px;
+  text-transform: uppercase;
+}
+
+/* buttons */
+.project__buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; /* Adjust as needed */
+  margin-top: 36px; /* Adjust as needed */
+}
+
+.project__button:nth-child(1) {
+  line-height: 1;
+  font-size: 14px;
+  font-weight: var(--fw-400);
+  color: var(--color-text);
+  border: 1px solid white;
+  border-radius: 0;
+  padding: 8px 12px;
+}
+
+.project__button:nth-child(2) {
+  line-height: 1;
+  font-size: 14px;
+  font-weight: var(--fw-400);
+  color: white;
+  border: 1px solid orange;
+
+  border-radius: 0;
+  padding: 8px 12px;
+}
+
+.project__button {
+  color: var(--color-text);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.project__button:hover {
+  background-color: var(--color-secondary);
 }
 
 .project__actions-list li:is(:hover, :focus-within) {
