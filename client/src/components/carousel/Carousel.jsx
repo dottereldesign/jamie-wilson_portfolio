@@ -131,6 +131,12 @@ const Carousel = () => {
                     <span className="coding-language">CSS</span>
                     <span className="coding-language">JS</span>
                   </p>
+                  <p>
+                    This Paper, Scissors, Rock game is a fun and interactive
+                    web-based implementation of the classic hand game. Players
+                    compete against the computer in a series of rounds, choosing
+                    either rock, paper, or scissors.
+                  </p>
                 </div>
               </div>
             </div>
@@ -147,6 +153,12 @@ const Carousel = () => {
                     <span className="coding-language">HTML</span>
                     <span className="coding-language">CSS</span>
                   </p>
+                  <p>
+                    The Modern Art Gallery project showcases contemporary
+                    artworks in a beautifully designed online gallery. Visitors
+                    can explore different collections and learn more about each
+                    piece and artist.
+                  </p>
                 </div>
               </div>
             </div>
@@ -162,6 +174,12 @@ const Carousel = () => {
                   <p className="project__author">
                     <span className="coding-language">HTML</span>
                     <span className="coding-language">CSS</span>
+                  </p>
+                  <p>
+                    The Maker landing page is designed for a modern product,
+                    featuring sleek design elements and a user-friendly layout.
+                    It highlights key features and benefits to attract potential
+                    customers.
                   </p>
                 </div>
               </div>
@@ -180,6 +198,11 @@ const Carousel = () => {
                     <span className="coding-language">CSS</span>
                     <span className="coding-language">JS</span>
                   </p>
+                  <p>
+                    The News landing page provides a clean and modern interface
+                    for daily news updates. Users can browse through different
+                    categories and read articles on various topics.
+                  </p>
                 </div>
               </div>
             </div>
@@ -196,6 +219,12 @@ const Carousel = () => {
                     <span className="coding-language">HTML</span>
                     <span className="coding-language">CSS</span>
                     <span className="coding-language">JS</span>
+                  </p>
+                  <p>
+                    The Workit landing page is designed for a fitness app,
+                    featuring vibrant visuals and interactive elements. It
+                    encourages users to join and start their fitness journey
+                    with engaging content.
                   </p>
                 </div>
               </div>
@@ -214,6 +243,12 @@ const Carousel = () => {
                     <span className="coding-language">JS</span>
                     <span className="coding-language">MySQL</span>
                     <span className="coding-language">Laravel</span>
+                  </p>
+                  <p>
+                    Agora is a dynamic e-commerce platform built with Laravel
+                    and MySQL. It provides a seamless shopping experience with
+                    secure transactions and a variety of products available for
+                    purchase.
                   </p>
                 </div>
               </div>
