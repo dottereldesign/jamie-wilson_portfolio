@@ -9,6 +9,14 @@ const LogoSlider = () => {
       <div className="slide-track">
         <div className="slide">
           <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg"
+            height="100"
+            width="250"
+            alt="Logo 1"
+          />
+        </div>
+        <div className="slide">
+          <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg"
             height="100"
             width="250"
@@ -55,6 +63,26 @@ const LogoSlider = () => {
             alt="Logo 7"
           />
         </div>
+
+        <div className="slide">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+            height="100"
+            width="250"
+            alt="Logo 8"
+          />
+        </div>
+
+        <div className="slide">
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg"
+            height="100"
+            width="250"
+            alt="Logo 9"
+          />
+        </div>
+
+        {/* Repeat the slides to create a seamless loop */}
         <div className="slide">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg"
@@ -63,7 +91,6 @@ const LogoSlider = () => {
             alt="Logo 1"
           />
         </div>
-        {/* Repeat the slides to create a seamless loop */}
         <div className="slide">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg"

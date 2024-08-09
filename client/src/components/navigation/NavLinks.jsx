@@ -10,9 +10,7 @@ const NavLinks = ({ className = '', onClick = () => {} }) => (
     <a href="#projects" onClick={onClick}>
       Projects
     </a>
-    <a href="#cv" onClick={onClick}>
-      CV
-    </a>
+
     <a href="#my-story" onClick={onClick}>
       My Story
     </a>
