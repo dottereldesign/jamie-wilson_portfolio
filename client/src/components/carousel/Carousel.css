@@ -188,7 +188,7 @@
   line-height: 1;
   font-size: 14px;
   font-weight: var(--fw-400);
-  color: white;
+  color: var(--color-text);
   border: 1px solid orange;
 
   border-radius: 0;

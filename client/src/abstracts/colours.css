@@ -1,10 +1,10 @@
 :root {
   /* colour pallette */
-  --clr-primary-100: #6200ea;
-  --clr-primary-200: #03dac6;
-  --clr-primary-300: #4ef272;
-  --clr-primary-400: #4754e1;
-  --clr-primary-500: #345577;
+  --clr-primary-100: #fabc1c;
+  --clr-primary-200: #ff833e;
+  --clr-primary-300: #1877f2;
+  --clr-primary-400: #0dbdf6;
+  --clr-primary-500: #4ef272;
 
   --clr-neutral-100: #ffffff;
   --clr-neutral-200: #f0f0e8;
@@ -19,18 +19,7 @@
   --clr-accent-400: ;
   --clr-accent-500: ;
 
-  /* theme switcher btn */
-  --btn-bg-color-light: #fff8e8;
-  --btn-bg-color-dark: #1c2135;
-  --btn-border-color-light: #1c2135;
-  --btn-border-color-dark: #f0f0e8;
-  --btn-sun-color: #fabc1c;
-  --btn-moon-color: #fffdf2;
-  --btn-day-bg-color: #0dbdf6;
-  --btn-night-bg-color: #1c2135;
-  --btn-cloud-color: #fffdf2;
-  --btn-star-color: #fffdf2;
-
+  /* unique pallette */
   --color-glow: rgba(255, 255, 255, 0.5);
 }
 

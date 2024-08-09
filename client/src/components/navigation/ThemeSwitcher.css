@@ -5,9 +5,9 @@
   grid-template-rows: repeat(24, 1px);
   gap: 0;
   position: relative;
-  background-color: var(--btn-day-bg-color);
+  background-color: var(--clr-primary-400);
   border-radius: 49px;
-  border: 1px solid var(--btn-border-color-light);
+  border: 1px solid var(--clr-neutral-400);
   cursor: pointer;
   transition:
     background-color 0.8s ease,
@@ -17,12 +17,12 @@
 }
 
 .theme-switcher-grid.night-theme {
-  background-color: var(--btn-night-bg-color);
-  border-color: var(--btn-border-color-dark);
+  background-color: var(--clr-neutral-400);
+  border-color: var(--clr-neutral-200);
 }
 
 .sun {
-  background-color: var(--btn-sun-color);
+  background-color: var(--clr-primary-100);
   grid-column: 3 / 23;
   grid-row: 3 / 23;
   border-radius: 50%;
@@ -34,7 +34,7 @@
 
 .theme-switcher-grid.night-theme .sun {
   grid-column: 33 / 53;
-  background-color: var(--btn-moon-color);
+  background-color: var(--clr-neutral-100);
 }
 
 .moon-overlay {
@@ -44,7 +44,7 @@
     left 0.8s ease,
     background-color 0.8s ease;
   z-index: 1;
-  background-color: var(--btn-day-bg-color);
+  background-color: var(--clr-primary-400);
 }
 
 .theme-switcher-grid.night-theme .moon-overlay {
@@ -53,11 +53,11 @@
   top: calc(4 / 29 * 100%);
   width: 18px;
   height: 18px;
-  background-color: var(--btn-night-bg-color);
+  background-color: var(--clr-neutral-400);
 }
 
 .cloud-ball {
-  background-color: var(--btn-cloud-color);
+  background-color: var(--clr-neutral-100);
   border-radius: 50%;
   width: 9px;
   height: 9px;
@@ -115,7 +115,7 @@
 }
 
 .star {
-  background-color: var(--btn-star-color);
+  background-color: var(--clr-neutral-100);
   width: 1px;
   height: 1px;
   position: absolute;
