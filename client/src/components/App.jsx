@@ -6,6 +6,7 @@ import Footer from './footer/Footer'
 import HeroSection from './hero-section/HeroSection'
 import useToggleTheme from '../hooks/useToggleTheme'
 import Carousel from './carousel/Carousel' // Corrected import
+import LogoSlider from './LogoSlider/LogoSlider' // Import the new component
 
 const App = () => {
   const [isNightTheme, toggleTheme] = useToggleTheme()
@@ -17,6 +18,7 @@ const App = () => {
       </header>
       <main>
         <HeroSection />
+        <LogoSlider /> {/* Add the new LogoSlider component here */}
         <Carousel /> {/* Use the new component */}
       </main>
       <Footer />
